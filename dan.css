@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #5A3E99, #1E3C72);
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.profile-left {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.profile-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-left:hover img {
+    transform: scale(1.1);
+}
+.profile-right {
+    max-width: 800px;
+    padding: 30px;
+    text-align: left;
+}
+.profile-right h1 {
+    font-size: 36px;
+    color: #FF4081;
+    margin-bottom: 10px;
+}
+.profile-right p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.skills-container {
+    margin-top: 40px;
+    text-align: center;
+}
+.skills-container h3 {
+    font-size: 24px;
+    color: #FF4081; 
+    margin-bottom: 30px;
+}
+.skill-box {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+}
+.circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #2D3E50; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.circle-svg {
+    transform: rotate(-90deg);
+}
+.circle-background {
+    fill: none;
+    stroke: #eee;
+}
+.circle-progress {
+    fill: none;
+    stroke: #FF4081; 
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s;
+}
+.percentage {
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FF4081; 
+}
+.skill-name {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+.back-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #FF4081; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #FF4081;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.back-link:hover {
+    background-color: #FF4081;
+    color: #333;
+}
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-left {
+        margin-bottom: 20px;
+    }
+    .profile-right {
+        text-align: center;
+    }
+    .skill-box {
+        margin: 10px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+    .percentage {
+        font-size: 18px;
+    }
+}
+.hobbies-container {
+    margin-top: 40px;
+    text-align: center;
+}
+.hobbies-container h3 {
+    font-size: 24px;
+    color: #FF4081;
+    margin-bottom: 30px;
+}
+.hobbies-box {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+}
+.circle {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #2D3E50; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden; 
+}
+.hobbies-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.hobbies-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+

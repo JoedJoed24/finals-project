@@ -1,0 +1,137 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(135deg, #000a1f, #3d6cb9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    font-size: 25px;
+    background: linear-gradient(135deg, #1a2a46, #3d6cb9);
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+.team-member {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #fff;
+}
+p {
+    color: #ddd;
+    text-align: left;
+    margin: 5px 0;
+}
+.border-box {
+    border-top: 2px solid #eee;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-style: italic;
+    color: #ddd;
+}
+.bottom-bar {
+    background: #BA8E23;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+nav {
+    background-color: #1a2a46;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+nav .logo {
+    color: #FFFF00;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #FFFF00;
+}
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #1a2a46;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+    nav ul.show {
+        display: flex; 
+    } 
+    .menu-icon {
+        display: block;
+    }
+}

@@ -1,0 +1,148 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000a1f, #3d6cb9);
+    color: #ffffff;
+    height: 100%; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; 
+    height: 100%;
+}
+
+/* Form Box Styling */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: #ffffff;
+    max-width: 400px; 
+    margin-right: 500px;
+}
+
+/* Header Styling */
+header {
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Form Styles */
+form .field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-size: 14px;
+    color: #e1e9f7;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+}
+
+.field.input input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.field.input input:focus {
+    border-color: #3d6cb9;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3d6cb9;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2b4f89;
+}
+
+/* Link Styling */
+.links {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #a29bfe;
+}
+
+/* Error Message Styling */
+.message {
+    text-align: center;
+    color: #ffffff; /* Changed text color to white for better readability */
+    background: rgba(255, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .form-box {
+        padding: 30px 20px;
+    }
+
+    header {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
